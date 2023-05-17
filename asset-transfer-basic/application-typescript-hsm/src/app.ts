@@ -53,7 +53,7 @@ const transactionsToSend: TransactionToSendFormat[] = [
     {
         request: 'submit',
         txName: 'CreateAsset',
-        txArgs: ['asset513', 'yellow', '5', 'Tom', '1300'],
+        txArgs: ['asset70', 'blue', '5', 'Tomoko', '300'],
         description: '\n--> Submit Transaction: CreateAsset, creates new asset with ID, color, owner, size, and appraisedValue arguments',
     },
     {
@@ -83,7 +83,7 @@ const transactionsToSend: TransactionToSendFormat[] = [
     {
         request: 'submit',
         txName: 'UpdateAsset',
-        txArgs: ['asset70', 'blue', '5', 'Tomoko', '300'],
+        txArgs: ['asset5', 'black', '15', 'Adriana', '700'],
         description: '\n--> Submit Transaction: UpdateAsset asset70, asset70 does not exist and should return an error',
     },
     {

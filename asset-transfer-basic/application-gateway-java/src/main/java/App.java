@@ -129,7 +129,7 @@ public final class App {
 		readAssetById();
 
 		// Update an asset which does not exist.
-		updateNonExistentAsset();
+		//updateNonExistentAsset();
 	}
 	
 	/**
@@ -170,6 +170,11 @@ public final class App {
 	 * the ledger.
 	 */
 	private void createAsset() throws EndorseException, SubmitException, CommitStatusException, CommitException {
+		System.out.println("\n--> calling priorityQueue");
+		 PriorityQueue pq = new PriorityQueue();
+		 pq.createqueue("CreateAsset", assetId, "yellow", "5", "Tom", "1300");
+		//check the mempool
+
 		System.out.println("\n--> Submit Transaction: CreateAsset, creates new asset with ID, Color, Size, Owner and AppraisedValue arguments");
 
 		contract.submitTransaction("CreateAsset", assetId, "yellow", "5", "Tom", "1300");
